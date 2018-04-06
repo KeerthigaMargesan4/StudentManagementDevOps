@@ -1,0 +1,34 @@
+<html xmlns:th="http://thymeleaf.org">  
+    <table>  
+    	<tr>
+    		<td colspan="2"> Registered Successfully </td>
+    	</tr>
+        <tr>  
+            <td>Hi </td>  
+           <td><h4 th:text="${stud.firstName}"></h4></td>  
+        </tr>  
+        <tr>  
+            <td>Email ID: </td>  
+            <td><h5 th:text="${stud.email}"></h5></td>  
+        </tr>  
+    </table>
+    <table>
+		<tr>
+			<td>
+				<button>
+					<a style="text-decoration: none" href="/">Home</a>
+				</button>
+			</td>
+			<td>
+				<button>
+					<a style="text-decoration: none" href="/login">Login</a>
+				</button>
+			</td>
+			<td>
+				<button>
+					<a style="text-decoration: none" href="/register">Registration</a>
+				</button>
+			</td>
+		</tr>
+	</table>
+</html>  
