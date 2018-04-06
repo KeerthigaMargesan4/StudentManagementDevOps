@@ -37,10 +37,14 @@ public class StudentDAOImpl implements StudentDAO
 			insertRow(s,student);
 		}
 	}
-	public ResultSet readTable(Statement s) throws SQLException 
+	public ResultSet readTable(Statement s) throws SQLException, IOException 
 	{
 		String readTable = "SELECT * FROM STUDENTREGISTRATION";
-        s.execute(readTable);
+        try{
+        	s.execute(readTable);
+        }catch(SQLException e){
+        	createTable(s);
+        }
         ResultSet rs = s.getResultSet();
         return rs;
 	}

@@ -16,7 +16,7 @@ public class DBTester {
         	Statement st = conn.createStatement();//Create Statement
         	//createTable(st);//Create Table
             //insertRow(st);//Insert row into the Table
-            //readTable(st);//Read Rows From Table
+            readTable(st);//Read Rows From Table
             //deleteTableDataAll(st);
             //dropTable(st);//Drop Table   
             //listTable(st);

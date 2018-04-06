@@ -8,13 +8,14 @@ public class StudentManagementTester
 {
 	 public static void main(String[] args) 
 	 {		 
-		 studentManagementApplicationTester(JUnitCore.runClasses(StudentApplicationTest.class));
-		 studentManagementApplicationTester(JUnitCore.runClasses(StudentControllerTest.class));
+		 studentManagementApplicationTester(JUnitCore.runClasses(StudentApplicationTest.class),"StudentApplicationTest");
+		 studentManagementApplicationTester(JUnitCore.runClasses(StudentControllerTest.class),"StudentControllerTest");
 	 }
 
-	 private static void studentManagementApplicationTester(Result runClasses) 
+	 private static void studentManagementApplicationTester(Result runClasses,String testClassName) 
 	 {
-	     Result result = runClasses;	      
+	     Result result = runClasses;
+	     System.out.println("Testing status for Class: "+testClassName);
 	      for (Failure failure : result.getFailures()) 
 	      {
 	         System.out.println(failure.toString());
