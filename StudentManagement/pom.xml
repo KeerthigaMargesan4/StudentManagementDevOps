@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com</groupId>
 	<artifactId>StudentManagement</artifactId>	
-	<version>0.0.1-SNAPSHOT</version>	
+	<version>1</version>	
 	<packaging>jar</packaging>
 	<name>StudentManagement</name>
 	<description>StudentManagement</description>
